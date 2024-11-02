@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #153677 0%, #4e085f 100%); 
+    padding: 10px;
+    display: flex;
+    align-items: start;
+}
+.cont{
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    margin: 100px auto 20px;
+    padding: 30px 30px 70px;
+    border-radius: 15px;
+}
+.cont h2{
+    color: #002765;
+    padding-bottom: 30px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    color: #757575;
+    background: #edeef0;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+}
+button:hover{
+    background-color: #886cca;
+    transition: 0.9s ease-in-out;
+    color: white;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 10px 8px 5px 20px;
+    user-select: none;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 7px;
+    left: -15px;
+}
+ul li.li{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.li::before{
+    background-image: url(images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background-color: #886cca;
+    color: white;
+    transition: 1s ease-in-out;
+    border-radius: 50%;
+}
